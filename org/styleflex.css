@@ -1,0 +1,276 @@
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+:root{
+    --prim:#131c29;
+    --sec:#ff8901;
+    --text:#596573;
+    --bgColor:#f4f4f6;
+    --buttonColor:#213349;
+    --headerFont: "Oswald" , sans-serif;
+    --textFont: 'Open Sans Condensed', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+}
+
+.inner{
+    width: 960px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.top-header{
+    background-color: var(--prim);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+    font-family: var(--headerFont);
+    font-size: 12px;
+}
+
+.top-nav-item {
+    display: inline-block;
+    border-right: #596573 solid 2px;
+    color: var(--text); 
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.top-nav-item :last-child {
+    border: none;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-nav-item{
+    display: inline-block;
+    background-color: var(--prim);
+    color: var(--bgColor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: var(--textFont);
+}
+
+.main-nav-item a{
+    color: var(--bgColor);
+}
+
+.main-nav-item:hover{
+    background-color: var(--sec);
+}
+
+.hero-section{
+    text-align: center;
+}
+
+
+.dot1, .dot2, .dot3 {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: lightgray;
+
+}
+
+:hover .dot1{
+   background-color: var(--sec);
+   border-radius: 10px;
+}
+
+
+.content-section{
+    display: flex;
+    align-items: center;
+}
+
+.content-smart{
+    border: lightgray solid 2px;
+    width: 25%;
+    height: 600px;
+    width: 320px; 
+}
+
+.content-strong{
+    border: lightgray solid 2px;
+    width: 25%;
+    height: 600px;
+    width: 320px;
+}
+
+.content-stable{
+    border: lightgray solid 2px;
+    width: 25%;
+    height: 600px;
+    width: 320px;
+}
+
+.sub-header{
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+.content-img{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.text{
+    padding: 10px;
+    color: var(--text);
+}
+
+.button-more{
+    margin: 10px;
+    background-color: var(--prim);
+    color: var(--bgColor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: var(--textFont);
+    text-transform: uppercase;
+}
+
+.footer{
+    width: 960px;
+    margin: auto;
+
+    background: radial-gradient(
+        at top right,
+        #33597e, #0e1620
+    );
+    padding-top: 30px;
+}
+
+.footer-div {
+    width: calc(100% / 3);
+}
+
+.main-footer{
+    display: flex;
+    color: var(--text);
+    font-family: var(--textFont);
+}
+
+.sub-header1{
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
+
+a {
+    color: white;
+    font-family: var(--textFont);
+}
+
+ul.news-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.date{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: var(--textFont);
+}
+
+.month{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: var(--textFont);
+}
+
+.date-div1, .date-div2, .date-div3 {
+    border-radius: 10px;
+    font-size: var(--textFont);
+    margin-left: 0;
+    padding: 0;
+    align-items: center;
+    width: 60px;
+    height: 55px;
+    text-align: center;
+}
+
+.date-div1{
+    background-color: #c28542;
+}
+
+.date-div2{
+    background-color: #c26045;
+}
+
+.date-div3{
+    background-color: #bb4261;
+}
+
+.footer-words{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.news-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h3{
+    font-size: 15px;  
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.service-list-item{
+    list-style-image: url(../media/cog.png);
+}
+
+.opp-list-item{
+    list-style-image: url(../media/chat.png);
+}
+
+.colophon{
+    background-color: var(--prim);
+    height: 100px;
+    color: var(--text);
+}
